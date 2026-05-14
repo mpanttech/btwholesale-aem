@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="innovation"
+        cq:parentPath="/content/dam/btwholesale/content-fragments/become-a-customer/why-bt"
+        jcr:description="\0"
+        jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Track record of innovation"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-01-01T00:00:00.000-08:00">
+        <data
+            cq:model="/conf/btwholesale/settings/dam/cfm/models/icon-card"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                id="innovation"
+                id_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                icon="innovation"
+                icon_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                heading="Track record of innovation"
+                heading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                description="We&apos;ve been providing high-quality telecoms services since 1846, continuously innovating to stay ahead of the market and deliver what your customers need."
+                description_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                highlight="{Boolean}false"
+                highlight_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

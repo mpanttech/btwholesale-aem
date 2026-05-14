@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/btwholesale",
+        "create path (nt:unstructured) /content/dam/btwholesale/jcr:content",
+        "set properties on /content/dam/btwholesale/jcr:content\n  set cq:conf{String} to /conf/btwholesale\n  set jcr:title{String} to \"BT Whole Sale\"\nend"
+    ]
+}

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Template"
+    allowedPaths="[/content/entities(/.*)?]">
+    <jcr:content
+        cq:scaffolding="/conf/btwholesale/settings/dam/cfm/models/site-content/jcr:content/model"
+        cq:status="enabled"
+        cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
+        jcr:description="Main site content including navigation, hero, product cards, testimonial, footer"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Site Content"
+        sling:resourceSuperType="dam/cfm/models/console/components/data/entity">
+        <model
+            cq:targetPath="/content/entities"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="wcm/scaffolding/components/scaffolding"
+            dataTypesConfig="/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes"
+            maxGeneratedOrder="30">
+            <cq:dialog
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/dialog">
+                <content
+                    jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        maxGeneratedOrder="30">
+                        <f0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Meta"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/page-meta"
+                            listOrder="1"
+                            metaType="fragment-reference"
+                            name="meta"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f0>
+                        <f1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Logo Alt"
+                            listOrder="2"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="logoAlt"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f1>
+                        <f2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Utility Links"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/link-item"
+                            listOrder="3"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="utilityLinks"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f2>
+                        <f3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Nav Links"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/link-item"
+                            listOrder="4"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="navLinks"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f3>
+                        <f4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Auth Links"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/link-item"
+                            listOrder="5"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="authLinks"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f4>
+                        <f5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Hero Headline"
+                            listOrder="6"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="heroHeadline"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f5>
+                        <f6
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="heroSubheadline"
+                            checked="true"
+                            default-mime-type="text/html"
+                            fieldLabel="Hero Subheadline"
+                            listOrder="7"
+                            metaType="text-multi"
+                            name="heroSubheadline"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <f7
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="heroBody"
+                            checked="true"
+                            default-mime-type="text/html"
+                            fieldLabel="Hero Body"
+                            listOrder="8"
+                            metaType="text-multi"
+                            name="heroBody"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <f8
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Hero CTA Label"
+                            listOrder="9"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="heroCtaLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f8>
+                        <f9
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Hero CTA Href"
+                            listOrder="10"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="heroCtaHref"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f9>
+                        <f10
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Product Cards Section Title"
+                            listOrder="11"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="productCardsSectionTitle"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f10>
+                        <f11
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Product Cards"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/icon-card"
+                            listOrder="12"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="productCards"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f11>
+                        <f12
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Support Heading"
+                            listOrder="13"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="supportHeading"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f12>
+                        <f13
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="supportBody"
+                            checked="true"
+                            default-mime-type="text/html"
+                            fieldLabel="Support Body"
+                            listOrder="14"
+                            metaType="text-multi"
+                            name="supportBody"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <f14
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Support Actions"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/link-item"
+                            listOrder="15"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="supportActions"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f14>
+                        <f15
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="testimonialQuote"
+                            checked="true"
+                            default-mime-type="text/html"
+                            fieldLabel="Testimonial Quote"
+                            listOrder="16"
+                            metaType="text-multi"
+                            name="testimonialQuote"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <f16
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Testimonial Author"
+                            listOrder="17"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="testimonialAuthor"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f16>
+                        <f17
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Testimonial Role"
+                            listOrder="18"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="testimonialRole"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f17>
+                        <f18
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Testimonial Company"
+                            listOrder="19"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="testimonialCompany"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f18>
+                        <f19
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Why Section Heading"
+                            listOrder="20"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="whySectionHeading"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f19>
+                        <f20
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Why Cards"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/icon-card"
+                            listOrder="21"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="whyCards"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f20>
+                        <f21
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="footerPartnerBlurb"
+                            checked="true"
+                            default-mime-type="text/html"
+                            fieldLabel="Footer Partner Blurb"
+                            listOrder="22"
+                            metaType="text-multi"
+                            name="footerPartnerBlurb"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <f22
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Partner CTA Label"
+                            listOrder="23"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="footerPartnerCtaLabel"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f22>
+                        <f23
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Partner CTA Href"
+                            listOrder="24"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="footerPartnerCtaHref"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f23>
+                        <f24
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Footer Legal Links"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/link-item"
+                            listOrder="25"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="footerLegalLinks"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f24>
+                        <f25
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Footer Social Links"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/link-item"
+                            listOrder="26"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="footerSocialLinks"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f25>
+                        <f26
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Copyright"
+                            listOrder="27"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="footerCopyright"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f26>
+                    </items>
+                </content>
+            </cq:dialog>
+        </model>
+    </jcr:content>
+</jcr:root>

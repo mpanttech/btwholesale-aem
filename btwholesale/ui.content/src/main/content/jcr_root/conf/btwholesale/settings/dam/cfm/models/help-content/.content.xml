@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Template"
+    allowedPaths="[/content/entities(/.*)?]">
+    <jcr:content
+        cq:scaffolding="/conf/btwholesale/settings/dam/cfm/models/help-content/jcr:content/model"
+        cq:status="enabled"
+        cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
+        jcr:description="Help page with categories, contact cards and portal items"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Help Content"
+        sling:resourceSuperType="dam/cfm/models/console/components/data/entity">
+        <model
+            cq:targetPath="/content/entities"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="wcm/scaffolding/components/scaffolding"
+            dataTypesConfig="/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes"
+            maxGeneratedOrder="15">
+            <cq:dialog
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/dialog">
+                <content
+                    jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        maxGeneratedOrder="15">
+                        <f0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Meta"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/page-meta"
+                            listOrder="1"
+                            metaType="fragment-reference"
+                            name="meta"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f0>
+                        <f1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Hero"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/page-hero"
+                            listOrder="2"
+                            metaType="fragment-reference"
+                            name="hero"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f1>
+                        <f2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Categories Heading"
+                            listOrder="3"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="categoriesHeading"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f2>
+                        <f3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Categories"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/nav-category"
+                            listOrder="4"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="categories"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f3>
+                        <f4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Contact Heading"
+                            listOrder="5"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="contactHeading"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f4>
+                        <f5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Contact Cards"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/contact-card"
+                            listOrder="6"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="contactCards"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f5>
+                        <f6
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="View All Contacts"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/link-item"
+                            listOrder="7"
+                            metaType="fragment-reference"
+                            name="viewAllContacts"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f6>
+                        <f8
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Portals Heading"
+                            listOrder="9"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="portalsHeading"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f8>
+                        <f9
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/models/editor/components/fragmentreference"
+                            fieldLabel="Portals"
+                            filter="hierarchy"
+                            fragmentmodelreference="/conf/btwholesale/settings/dam/cfm/models/portal-item"
+                            listOrder="10"
+                            metaType="fragment-reference"
+                            multiple="{Boolean}true"
+                            name="portals"
+                            nameSuffix="contentReference"
+                            renderReadOnly="false"
+                            rootPath="/content/dam/btwholesale"
+                            showEmptyInReadOnly="true"
+                            valueType="string/content-fragment">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                rootPath="/content/dam/btwholesale"/>
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f9>
+                    </items>
+                </content>
+            </cq:dialog>
+        </model>
+    </jcr:content>
+</jcr:root>

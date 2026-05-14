@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="page"
+        cq:parentPath="/content/dam/btwholesale/content-fragments/help-content"
+        jcr:description="\0"
+        jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Help Content Page"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-01-01T00:00:00.000-08:00">
+        <data
+            cq:model="/conf/btwholesale/settings/dam/cfm/models/help-content"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                meta="/content/dam/btwholesale/content-fragments/help-content/meta"
+                meta_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                hero="/content/dam/btwholesale/content-fragments/help-content/hero"
+                hero_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                categoriesHeading="Support resources"
+                categoriesHeading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                categories="[/content/dam/btwholesale/content-fragments/help-content/categories/broadband,/content/dam/btwholesale/content-fragments/help-content/categories/ethernet,/content/dam/btwholesale/content-fragments/help-content/categories/hosted-communications,/content/dam/btwholesale/content-fragments/help-content/categories/product-documentation,/content/dam/btwholesale/content-fragments/help-content/categories/customer-service-plans,/content/dam/btwholesale/content-fragments/help-content/categories/pricing,/content/dam/btwholesale/content-fragments/help-content/categories/billing,/content/dam/btwholesale/content-fragments/help-content/categories/apps,/content/dam/btwholesale/content-fragments/help-content/categories/network-information,/content/dam/btwholesale/content-fragments/help-content/categories/regulatory,/content/dam/btwholesale/content-fragments/help-content/categories/contracts,/content/dam/btwholesale/content-fragments/help-content/categories/faqs,/content/dam/btwholesale/content-fragments/help-content/categories/mobile]"
+                categories_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                contactHeading="Contact us"
+                contactHeading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                contactCards="[/content/dam/btwholesale/content-fragments/help-content/contact-cards/enquiry,/content/dam/btwholesale/content-fragments/help-content/contact-cards/callback,/content/dam/btwholesale/content-fragments/help-content/contact-cards/phone]"
+                contactCards_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                viewAllContacts="/content/dam/btwholesale/content-fragments/help-content/view-all-contacts"
+                viewAllContacts_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                portalsHeading="Access your account"
+                portalsHeading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                portals="[/content/dam/btwholesale/content-fragments/help-content/portals/my-bt-wholesale,/content/dam/btwholesale/content-fragments/help-content/portals/the-hub]"
+                portals_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

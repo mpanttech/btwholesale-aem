@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Template"
+    allowedPaths="[/content/entities(/.*)?]">
+    <jcr:content
+        cq:scaffolding="/conf/btwholesale/settings/dam/cfm/models/icon-card/jcr:content/model"
+        cq:status="enabled"
+        cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
+        jcr:description="Card with icon, heading, description, links and optional highlight"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Icon Card"
+        sling:resourceSuperType="dam/cfm/models/console/components/data/entity">
+        <model
+            cq:targetPath="/content/entities"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="wcm/scaffolding/components/scaffolding"
+            dataTypesConfig="/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes"
+            maxGeneratedOrder="15">
+            <cq:dialog
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/authoring/dialog">
+                <content
+                    jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        maxGeneratedOrder="15">
+                        <f0
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="ID"
+                            listOrder="1"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="id"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f0>
+                        <f1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Icon"
+                            listOrder="2"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="icon"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f1>
+                        <f2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Heading"
+                            listOrder="3"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="heading"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f2>
+                        <f3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Label"
+                            listOrder="4"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="label"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f3>
+                        <f4
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/cfm/admin/components/authoring/contenteditor/multieditor"
+                            cfm-element="description"
+                            checked="true"
+                            default-mime-type="text/html"
+                            fieldLabel="Description"
+                            listOrder="5"
+                            metaType="text-multi"
+                            name="description"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string"/>
+                        <f5
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Href"
+                            listOrder="6"
+                            maxlength="255"
+                            metaType="text-single"
+                            name="href"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f5>
+                        <f6
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Link Labels"
+                            listOrder="7"
+                            maxlength="255"
+                            metaType="text-single"
+                            multiple="{Boolean}true"
+                            name="linkLabels"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f6>
+                        <f7
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Link Hrefs"
+                            listOrder="8"
+                            maxlength="255"
+                            metaType="text-single"
+                            multiple="{Boolean}true"
+                            name="linkHrefs"
+                            renderReadOnly="false"
+                            showEmptyInReadOnly="true"
+                            valueType="string">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f7>
+                        <f8
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            fieldLabel="Highlight"
+                            listOrder="9"
+                            metaType="boolean"
+                            name="highlight"
+                            renderReadOnly="false"
+                            text="Highlight"
+                            valueType="boolean">
+                            <granite:data jcr:primaryType="nt:unstructured"/>
+                        </f8>
+                    </items>
+                </content>
+            </cq:dialog>
+        </model>
+    </jcr:content>
+</jcr:root>

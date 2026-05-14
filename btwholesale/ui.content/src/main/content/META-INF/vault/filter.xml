@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/btwholesale" mode="merge"/>
+    <filter root="/content/btwholesale" mode="merge"/>
+    <filter root="/content/dam/btwholesale" mode="merge">
+        <exclude pattern="/content/dam/btwholesale(/.*)?"/>
+        <include pattern="/content/dam/btwholesale/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/btwholesale/asset.jpg" mode="merge"/>
+    <filter root="/content/dam/btwholesale/content-fragments" mode="merge"/>
+    <filter root="/content/experience-fragments/btwholesale" mode="merge"/>
+</workspaceFilter>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="my-bt-wholesale"
+        cq:parentPath="/content/dam/btwholesale/content-fragments/help-content/portals"
+        jcr:description="\0"
+        jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="My BT Wholesale"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-01-01T00:00:00.000-08:00">
+        <data
+            cq:model="/conf/btwholesale/settings/dam/cfm/models/portal-item"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                id="my-bt-wholesale"
+                id_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                heading="My BT Wholesale"
+                heading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                description="Our long-established platform for our full product range. Log in to access Business Zone, briefings, and much more."
+                description_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                icon="portal"
+                icon_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                loginLabel="Log in"
+                loginLabel_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                loginHref="https://my.btwholesale.com/portalzone/login/auth.rest"
+                loginHref_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                registerLabel="Register"
+                registerLabel_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                registerHref="https://my.btwholesale.com/onboard/user/#/user/welcome"
+                registerHref_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                helpLabel="Log in help"
+                helpLabel_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                helpHref="/log-in/log-in-help.html"
+                helpHref_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                dashboardLinkLabels="[Overview,My orders,Repairs and faults,Inventory &amp; Reports,Billing,My apps,My briefings,Administration]"
+                dashboardLinkLabels_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                dashboardLinkHrefs="[https://my.btwholesale.com/businesszone/hs/overview,https://my.btwholesale.com/businesszone/hs/order/,https://my.btwholesale.com/businesszone/hs/fault/,https://my.btwholesale.com/businesszone/hs/inventory/,https://my.btwholesale.com/businesszone/billing/launchBilling.do,https://my.btwholesale.com/portalzone/portalzone/loadMyAppsPage.do,/sc/briefings.html,https://my.btwholesale.com/businesszone/admin/launchAdmin.do]"
+                dashboardLinkHrefs_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

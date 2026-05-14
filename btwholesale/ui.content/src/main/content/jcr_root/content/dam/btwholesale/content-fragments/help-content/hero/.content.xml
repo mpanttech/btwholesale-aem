@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="hero"
+        cq:parentPath="/content/dam/btwholesale/content-fragments/help-content"
+        jcr:description="\0"
+        jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Help &amp; support"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-01-01T00:00:00.000-08:00">
+        <data
+            cq:model="/conf/btwholesale/settings/dam/cfm/models/page-hero"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                heading="Help &amp; support"
+                heading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                subheading="Explore our wide range of resources, including billing help, pricing updates, orders and faults help, technical handbooks, customer service plans and best practice guides."
+                subheading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

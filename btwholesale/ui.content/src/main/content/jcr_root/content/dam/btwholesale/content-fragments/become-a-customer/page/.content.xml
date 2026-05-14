@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="page"
+        cq:parentPath="/content/dam/btwholesale/content-fragments/become-a-customer"
+        jcr:description="\0"
+        jcr:lastModified="{Date}2024-01-01T00:00:00.000-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Become a Customer Page"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2024-01-01T00:00:00.000-08:00">
+        <data
+            cq:model="/conf/btwholesale/settings/dam/cfm/models/become-a-customer"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                meta="/content/dam/btwholesale/content-fragments/become-a-customer/meta"
+                meta_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                hero="/content/dam/btwholesale/content-fragments/become-a-customer/hero"
+                hero_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                benefitsHeading="Why partner with us"
+                benefitsHeading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                benefits="[/content/dam/btwholesale/content-fragments/become-a-customer/benefits/quality,/content/dam/btwholesale/content-fragments/become-a-customer/benefits/network,/content/dam/btwholesale/content-fragments/become-a-customer/benefits/revenue,/content/dam/btwholesale/content-fragments/become-a-customer/benefits/support]"
+                benefits_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                productsHeading="Our products"
+                productsHeading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                productsDescription="Unlock a comprehensive portfolio of wholesale products and services to grow your business and meet your customers&apos; needs."
+                productsDescription_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                products="[/content/dam/btwholesale/content-fragments/become-a-customer/products/data,/content/dam/btwholesale/content-fragments/become-a-customer/products/voice,/content/dam/btwholesale/content-fragments/become-a-customer/products/hosted-comms,/content/dam/btwholesale/content-fragments/become-a-customer/products/managed-services,/content/dam/btwholesale/content-fragments/become-a-customer/products/mobile,/content/dam/btwholesale/content-fragments/become-a-customer/products/iot]"
+                products_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                whyBTHeading="Why BT Wholesale"
+                whyBTHeading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                whyBT="[/content/dam/btwholesale/content-fragments/become-a-customer/why-bt/innovation,/content/dam/btwholesale/content-fragments/become-a-customer/why-bt/reach,/content/dam/btwholesale/content-fragments/become-a-customer/why-bt/bespoke]"
+                whyBT_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                applyHeading="What we&apos;ll need from you"
+                applyHeading_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                applyDescription="Getting started is straightforward. To set up your account we&apos;ll need the following information from you."
+                applyDescription_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                applyRequirements="[Your contact details &#8212; name&#44; email address and phone number,Your business information &#8212; company registration number&#44; VAT number and reseller code,Your business needs &#8212; the products and services you&apos;re interested in,Agreement to move your BT account to BT Wholesale,Acceptance of our non-disclosure agreement]"
+                applyRequirements_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"
+                applyCta="/content/dam/btwholesale/content-fragments/become-a-customer/apply-cta"
+                applyCta_x0040_LastModified="{Date}2024-01-01T00:00:00.000-08:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
